@@ -1,7 +1,7 @@
 const TeleBot = require('telebot');
 
 const bot = new TeleBot({
-    token: '431943032:AAEddKA9X8nDXRbzwg4rpQQXZ2Aw_YUT68o' 
+    token: '' 
      
 });
 
@@ -19,7 +19,7 @@ bot.on(/[vV]ersie/, (msg) => {
 
 bot.on(/hoi|hallo/, function (msg) {
   return bot.sendMessage(msg.from.id, "Hoi " + msg.from.first_name, {
-    replyToMessage: msg.message_id;
+    replyToMessage: msg.message_id
   } );
 });
 
